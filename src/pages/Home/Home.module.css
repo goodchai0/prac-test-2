@@ -109,6 +109,9 @@
       right: 80%;
       border-radius: 58rem;
   }
+  .hidden{
+    display: hidden !important;
+  }
   }
 
   @media (max-width: 360px) {
@@ -134,6 +137,9 @@
       width: 100vw;
     }
     .hideLeft{
+      display: hidden;
+    }
+    .hidden{
       display: hidden;
     }
   }

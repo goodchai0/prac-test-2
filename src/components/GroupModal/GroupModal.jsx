@@ -54,8 +54,9 @@ const GroupModal = ({ isOpen, onClose, onColorClick, onCreateGroup, onGroupName 
         <h2>Create New group</h2>
         {message && <p style={{ color: 'red' }}>{message}</p>}
         <div className={styles.groupName}>
-          <label htmlFor="name">Group Name </label>
+          <label htmlFor="name" >Group Name </label>
           <input
+          placeholder="Enter the Group Name"
             type="text"
             id="name"
             onChange={(e) => {

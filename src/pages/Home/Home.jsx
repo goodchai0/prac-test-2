@@ -118,7 +118,7 @@ const handleCardClick = (groupId, groupName, groupColor) => {
             />
           ))}
         </div>
-        <div className={styles.plus} onClick={openHandle}>
+        <div className={`${styles.plus} ${isRightVisible? styles.hideLeft : ""}`} onClick={openHandle}>
           +
         </div>
       </div>

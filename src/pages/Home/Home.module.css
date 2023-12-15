@@ -140,6 +140,6 @@
       display: hidden;
     }
     .hidden{
-      display: hidden;
+      display: hidden !important;
     }
   }

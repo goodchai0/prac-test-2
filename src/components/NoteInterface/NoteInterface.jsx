@@ -1,6 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
 import Cards from "../Cards/Cards";
 import styles from './NoteInterface.module.css';
+import graybutton from "../../assets/Vector1.png";
+import bluebutton from "../../assets/Vector.png";
 
 const NoteInterface = ({ groupId, groupName, groupColor, toggleRightVisibility }) => {
   const [noteText, setNoteText] = useState("");
@@ -70,12 +72,12 @@ const NoteInterface = ({ groupId, groupName, groupColor, toggleRightVisibility }
 >
 {noteText.trim() ?
   <img
-    src="src\assets\Vector.png"
+    src={bluebutton}
     alt="Save Note"
     className={styles.noteImage}
   />:
   <img
-    src="src\assets\Vector1.png"
+    src={graybutton}
     alt="Save Note"
     className={styles.noteImage}
     style={{width:"2rem" ,fontSize:"large", fontWeight:"600"}}

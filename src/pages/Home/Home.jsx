@@ -3,7 +3,7 @@ import styles from "./Home.module.css";
 import Cards from "../../components/Cards/Cards";
 import GroupModal from "../../components/GroupModal/GroupModal";
 import NoteInterface from "../../components/NoteInterface/NoteInterface";
-
+import homePage from "../../assets/image-removebg-preview1.png";
 export const Home = () => {
   const [isModalOpen, setModalOpen] = useState(false);
   const [selectedColor, setSelectedColor] = useState("#ff0000"); // Default color
@@ -128,7 +128,7 @@ const handleCardClick = (groupId, groupName, groupColor) => {
         {!selectedGroupId || !selectedGroupName ? (
           <div style={{margin:"5rem",display:"flex",justifyContent:"center",alignItems:"center",flexDirection:"column",color:"black"}}>
             <img
-              src="src\assets\image-removebg-preview 1.png"
+              src={homePage}
               alt="Fallback Image"
             />
             <div  style={{display:"flex",justifyContent:"center",alignItems:"center",flexDirection:"column",maxWidth:"34vw"}}>

@@ -126,4 +126,14 @@
       padding-bottom:7px ;
       border-radius: 58rem;
   }
+    .main .left.hideLeft {
+      width: 0;
+    }
+      
+    .main .right.hideRight {
+      width: 100vw;
+    }
+    .hideLeft{
+      display: hidden;
+    }
   }

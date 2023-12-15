@@ -1,0 +1,168 @@
+/* NoteInterface.module.css */
+.header {
+  background-color: #001f8b;
+  position: relative;
+  top: -1.2rem;
+}
+
+.textareaContainer {
+  position: fixed;
+  top: 69vh;
+  bottom: 1px;
+  width: 72vw;
+  padding: 1rem;
+  background-color: #001f8b;
+}
+
+textarea {
+  position: relative;
+  width: 85%; /* Full width of the container */
+  height: 150px; /* Set your default height */
+  padding: 1.5rem 5.5rem 1.5rem 1.5rem;
+  margin-right: 30px;
+  background-color: white;
+  border-radius: 1rem;
+  color: black;
+  font-weight: 500;
+  font-size: 1.5rem;
+  overflow-y: auto; /* Add scrollability in the vertical direction */
+  overflow-x: hidden; /* Hide the horizontal scrollbar */
+}
+
+.arrowButton {
+  position: absolute;
+  right: 6rem;
+  bottom: 35px;
+  padding: 5px;
+  background-color: #fff;
+  cursor: pointer;
+  color: black;
+}
+.note {
+  width: 92%;
+  color: black;
+  font-size: 1rem;
+  padding: 1rem;
+  background-color: #ffffff;
+  margin: 1rem;
+  white-space: pre-line; /* Preserve line breaks */
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.25);
+}
+
+.noteArea {
+  height: 55vh;
+  overflow-y: auto; /* Add scrollability in the vertical direction */
+  overflow-x: hidden; /* Hide the horizontal scrollbar */
+}
+
+/* Remove the width property from .note p */
+.note p {
+  width: 98%;
+  padding: 0rem 1rem 0rem 1rem;
+  white-space: pre-wrap; /* Preserve spaces and line breaks */
+}
+
+/* Add the following styles to your NoteInterface.module.css */
+
+.noteArea {
+  height: 55vh;
+  overflow-y: auto; /* Add scrollability in the vertical direction */
+  overflow-x: hidden; /* Hide the horizontal scrollbar */
+}
+
+/* Add the following styles to your NoteInterface.module.css */
+
+.noteArea {
+  height: 55vh;
+  overflow-y: auto; /* Add scrollability in the vertical direction */
+  overflow-x: hidden; /* Hide the horizontal scrollbar */
+}
+
+/* Customize scrollbar for .noteArea and .textarea */
+.noteArea::-webkit-scrollbar {
+  width: 10px; /* Set the width of the scrollbar */
+}
+.textarea::-webkit-scrollbar {
+  width: 10px; /* Set the width of the scrollbar */
+  height: 0.5rem;
+  border-radius: 1rem;
+  margin-right: 1rem
+}
+
+.noteArea::-webkit-scrollbar-thumb,
+.textarea::-webkit-scrollbar-thumb {
+  background-color: #888; /* Set the color of the scrollbar thumb */
+  border-radius: 5px; /* Optional: Round the corners of the thumb */
+}
+
+.noteArea::-webkit-scrollbar-track,
+.textarea::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* Set the color of the scrollbar track */
+}
+
+.noteArea::-webkit-scrollbar-thumb:hover,
+.textarea::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Set the color of the scrollbar thumb on hover */
+}
+
+
+
+
+
+@media (max-width: 530px) {
+  .textareaContainer {
+    position: fixed;
+    top: 75vh;
+    bottom: 1px;
+    width: 100%;
+    background-color: #001f8b;
+  }
+  .noteArea {
+    height: 62vh;
+    overflow-y: auto; /* Add scrollability in the vertical direction */
+    overflow-x: hidden; /* Hide the horizontal scrollbar */
+  }
+  .note {
+    padding-right: 1rem;
+    width: 84vw;
+    color: black;
+    font-size: 1rem;
+    background-color: #ffffff;
+    white-space: pre-line; /* Preserve line breaks */
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.25);
+  }
+  .main{
+    width: 100vw;
+    background-color: aliceblue;
+  }
+  textarea {
+    position: relative;
+    width: 67%; /* Full width of the container */
+    height: 100px; /* Set your default height */
+    padding: 1.5rem 5.5rem 1.5rem 1.5rem;
+    margin-right: 30px;
+    background-color: white;
+    border-radius: 1rem;
+    color: black;
+    font-weight: 500;
+    font-size: 1.5rem;
+    overflow-y: auto; /* Add scrollability in the vertical direction */
+    overflow-x: hidden; /* Hide the horizontal scrollbar */
+  }
+  .header{
+    display: flex;
+    flex-direction: row;
+  }
+}
+.backArrow {
+  display: none; /* Hide the backArrow by default */
+  margin-left: 2rem;
+  margin-right: 0rem;
+  width: 2rem;
+  margin-top: 2.0rem;
+  font-size: 2rem;
+  font-weight: 800;
+  @media (max-width: 530px) {
+    display: block; /* Show the backArrow when the width is 530px or less */
+  }
+}
